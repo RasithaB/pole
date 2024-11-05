@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Polling Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="poll-container">
+        <h2>What's your favorite programming language?</h2>
+        <div class="option" onclick="vote('JavaScript')">JavaScript</div>
+        <div class="option" onclick="vote('Python')">Python</div>
+        <div class="option" onclick="vote('Java')">Java</div>
+        <div class="option" onclick="vote('C#')">C#</div>
+
+        <div class="result-container" id="result-container"></div>
+        <button class="reset-btn" onclick="resetPoll()">Reset Poll</button>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
